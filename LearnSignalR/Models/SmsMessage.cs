@@ -9,14 +9,8 @@ namespace SmsApi.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
-
-        [BsonElement("PhoneNumber")]
         public string PhoneNumber { get; set; }
-
-        [BsonElement("Message")]
         public string Message { get; set; }
-
-        [BsonElement("Timestamp")]
         public DateTime Timestamp { get; set; }
     }
 }
